@@ -91,10 +91,16 @@ form input[type=submit], form input[type=button] {
   padding-top: 0px;
 }
 .container #scratchpad-title {
-  font-size: 15px;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
   font-weight: bold;
   padding: 0;
   line-height: 40px;
+  background: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding: 0 15px;
 }
 
 .rich-editor {

@@ -80,9 +80,6 @@ form
   }
   input[type="submit"], input[type="button"]
   {
-    position: sticky;
-    bottom: 0;
-    left: 0;
     height: 40px;
     background: rgb(0, 66, 87);
     border: 0;
@@ -91,6 +88,7 @@ form
     color: white;
     cursor: pointer;
     padding: 0px 10px;
+    margin-top: 100px;
   }
 }
   

@@ -68,9 +68,6 @@ form .input-label input.autoheight, form .input-label select.autoheight, form .i
   height: auto;
 }
 form input[type=submit], form input[type=button] {
-  position: sticky;
-  bottom: 0;
-  left: 0;
   height: 40px;
   background: rgb(0, 66, 87);
   border: 0;
@@ -79,6 +76,7 @@ form input[type=submit], form input[type=button] {
   color: white;
   cursor: pointer;
   padding: 0px 10px;
+  margin-top: 100px;
 }
 
 *, *::before, *::after {

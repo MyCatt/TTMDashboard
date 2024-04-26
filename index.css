@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  background: #e7ecf1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 3px;
+  width: 500px;
+  overflow-y: auto;
+  height: 100vh;
+  box-sizing: border-box;
+}
+form h3 {
+  margin: 0 0 5px 0;
+}
+form p {
+  margin: 0;
+}
+form h4 {
+  color: blue;
+  margin-bottom: 15px;
+}
+form hr {
+  border: 0;
+  height: 1px;
+  background: blue;
+  margin: 20px 0px;
+}
+form .input-label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+form .input-label label {
+  font-weight: bold;
+  font-size: 13px;
+}
+form .input-label input, form .input-label select, form .input-label textarea {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 35px;
+  border-radius: 2px;
+  border: 1px solid #3d3d3d;
+  box-sizing: border-box;
+  padding: 0px 10px;
+}
+form .input-label input.large, form .input-label select.large, form .input-label textarea.large {
+  height: 120px;
+  padding: 10px;
+}
+form .input-label input.autoheight, form .input-label select.autoheight, form .input-label textarea.autoheight {
+  height: auto;
+}
+form input[type=submit], form input[type=button] {
+  height: 40px;
+  background: rgb(0, 66, 87);
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  color: white;
+  cursor: pointer;
+  padding: 0px 10px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.95rem;
+}
+
+.container {
+  background: none;
+  border-left: 2px solid #f3f3f3;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 500px;
+  width: calc(100% - 500px);
+  height: 100vh;
+  box-sizing: border-box;
+  padding: 20px;
+  padding-top: 0px;
+}
+.container #scratchpad-title {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+  line-height: 40px;
+}
+
+.rich-editor {
+  width: 100%;
+  height: calc(100% - 40px);
+  border: 0;
+  position: relative;
+  padding: 16px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 3px;
+}
+
+.html-output {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+.toolbar {
+  width: 100%;
+  display: flex;
+}
+
+.toolbar__btn {
+  width: 42px;
+  height: 42px;
+  background-color: transparent;
+  cursor: pointer;
+}
+.toolbar__btn box-icon {
+  pointer-events: none;
+  vertical-align: middle;
+  fill: #adb5bd;
+}
+.toolbar__btn.is-selected box-icon {
+  fill: #212529;
+}
+
+.toolbar__form--inline {
+  position: absolute;
+  background-color: #343a40;
+  color: #fff;
+  padding: 8px;
+  width: 300px;
+  border-radius: 8px;
+}
+.toolbar__form--inline.is-hidden {
+  display: none;
+}
+.toolbar__form--inline input {
+  border: 1px solid transparent;
+  border-bottom: 2px solid transparent;
+  background-color: transparent;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 8px 4px 8px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  width: calc(100% - 28px);
+  font-weight: 300;
+}
+.toolbar__form--inline input:placeholder {
+  color: rgba(248, 249, 250, 0.6);
+}
+.toolbar__form--inline input:focus {
+  outline: none;
+  border-bottom-color: #b197fc;
+}
+.toolbar__form--inline button {
+  line-height: 0;
+  vertical-align: middle;
+  padding: 4px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+.toolbar__form--inline button:focus {
+  outline: none;
+}
+.toolbar__form--inline button .box-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: #f8f9fa;
+}
+.toolbar__form--inline input[type=submit] {
+  visibility: hidden;
+  position: absolute;
+  opacity: 0;
+}
+.toolbar__form--inline::after {
+  content: "";
+  position: absolute;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #343a40 transparent transparent transparent;
+  top: 100%;
+  left: 0;
+}/*# sourceMappingURL=index.css.map */

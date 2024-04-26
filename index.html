@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title of the document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="formWrap" >
+  
+        <form class="form">
+          <h3>Register Company</h3>
+          <p>Only submit when contract has been signed.</p>
+          
+          <hr />
+          <h4>Organisation</h4>
+          
+            <div class="input-label" id="foo_form">
+              <label>Company Name (Can't be changed later)*</label>
+              <input type="text" required placeholder="" />
+            </div>
+          
+             <div class="input-label" >
+              <label>Industry *</label>
+              <input type="text" required placeholder="" />
+            </div>
+      
+             <div class="input-label" >
+              <label>Project Owner *</label>
+              <input type="text" required placeholder="" />
+            </div>
+          
+             <div class="input-label" >
+              <label>Project Owner Email*</label>
+              <input type="email" required placeholder="" />
+            </div>
+          
+            <hr />
+            <h4>Platform</h4>
+          
+             <div class="input-label" >
+              <label>Platforms (ctrl-click)</label>
+              <select class="autoheight" name="platforms" id="platforms" multiple>
+                <option value="Finops">Finance & Operations</option>
+                <option value="Customer Engagement (CE)">Customer Engagement (CE)</option>
+                <option value="Business Central">Business Central</option>
+                <option value="pos">POS</option>
+                <option value="pos">Salesforce</option>
+              </select>
+            </div>
+          
+            <div class="input-label" >
+              <label>Other platforms (Comma seperated!)</label>
+              <input type="text" placeholder="" />
+            </div>
+          
+            <div class="input-label" >
+              <label>Customizations/ISV's (Comma seperated!)</label>
+              <textarea></textarea>
+            </div>
+          
+            <div class="input-label" >
+              <label>Enviornment/Platform notes:</label>
+              <textarea class="large"></textarea>
+            </div>
+          
+          <hr />
+          <h4>Extra</h4>
+          
+            <div class="input-label" id="foo_form">
+              <label>Purchase Test Qty *</label>
+              <input type="number" required placeholder="0" />
+            </div>
+          
+          <input type="button" value="Save Draft"/>
+          <input type="submit" value="Register Signed Company"/>
+        </form>
+
+        <div class="container">
+            <h5 id="scratchpad-title">Scratchpad:</h5>
+        </div>
+      </div>
+      <script src="index.js"></script>
+
+</body>
+
+</html>
